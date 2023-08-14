@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>In A Box</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    .company-name {
+    color: red;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.05);
+    background: linear-gradient(to bottom, black, black);
+    animation: pulsate 2s ease-in-out infinite;
+  }
+
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+    .navbar a:hover {
+      background-color: black;
+      color: red;
+    }
+
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: left;
+      padding: 20px;
+      background-color: #F50F0F ;
+    }
+
+    h3{
+      text-align: center;
+      padding: 20px;
+      color: ;
+      
+      
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #9C8A6C ;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .footer-left p {
+      text-align: left;
+    }
+
+    .footer-right {
+      text-align: right;
+    }
+
+    @media (max-width: 575px) {
+      .footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer p {
+        margin-bottom: 5px;
+      }
+    }
+    body {
+      background-image: url('98.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+    }
+
+.navbar a:hover {
+  animation: link-bounce 0.5s linear infinite;
+}
+
+@keyframes link-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.lighting-effect {
+  text-align: center;
+  font-size: 48px;
+  color: white;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.05);
+  animation: pulsate 2s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.05);
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.05);
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="company-name">
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In A Box</h2>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="file:///D:/Module_4/BootstrapTesting/InABox/Homepage.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="file:///D:/Module_4/BootstrapTesting/InABox/products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///D:/Module_4/BootstrapTesting/InABox/menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///D:/Module_4/BootstrapTesting/InABox/packages.html">Packages</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="file:///D:/Module_4/BootstrapTesting/InABox/Signup.html">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///D:/Module_4/BootstrapTesting/InABox/login.html">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+ <h3 class="lighting-effect">Packages</h3>
+  <h3 class="lighting-effect">Deluxe</h3>
+
+
+<div class="col">
+   <div class="card card-sm" style="background-color: #FCB8C3 ; width: 300px;">
+    <img src="burger.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <a href="https://www.bluestacks.com/" class="btn btn-primary">Ingredients:
+
+Ground beef patty
+Hamburger bun
+Lettuce
+Tomato
+Onion
+Pickles
+Cheese (optional)
+Condiments (ketchup, mustard, mayonnaise)
+Calorie Information (approximate values):
+
+</a>
+      <a href="https://www.bluestacks.com/" class="btn btn-primary">Ground beef patty (4 oz/113g): around 280 calories
+Hamburger bun: around 150 calories
+Lettuce (1 leaf): around 5 calories
+Tomato (1 slice): around 5 calories
+Onion (1 slice): around 5 calories
+Pickles (3-4 slices): around 5-10 calories
+Cheese (1 slice, optional): around 70-100 calories
+Condiments (varies based on quantity used):
+Ketchup (1 tablespoon): around 15 calories
+Mustard (1 tablespoon): around 10 calories
+Mayonnaise (1 tablespoon): around 90 calories</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<br><br>
+ 
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+      <p>Cook Along with Us</p>
+    </div>
+    <div class="footer-center">
+         <a href="#"><img src="facebook-logo.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter-logo.png" alt="Twitter"></a>
+          <a href="#"><img src="linkedin-logo.png" alt="LinkedIn"></a>
+    </div>
+    <div class="footer-right">
+     <a href="file:///D:/Module_4/BootstrapTesting/InABox/aboutus.html">About Us</a>
+      <a href="file:///D:/Module_4/BootstrapTesting/InABox/contactus.html">Contact Us</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Add Font Awesome for social media icons -->
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Company Website</title>
+  <style>
+    /* CSS styles here */
+
+  </style>
+</head>
+<body style="background-image: url('burger.jpg');">
+  <div class="company-name">
+    <h1>In A Box</h1>
+  </div>
+
+  <div class="navbar">
+    <div>
+      <a href="file:///D:/Module_4/BootstrapTesting/InABox/Homepage.html">Home</a>
+      <a href="file:///D:/Module_4/BootstrapTesting/InABox/products.html">Products</a>
+      <a href="#">Menu</a>
+      <a href="#">Packages</a>
+    </div>
+    <div>
+      <a href="file:///D:/Module_4/BootstrapTesting/InABox/Signup.html" onclick="showWarning();">Sign Up</a>
+      <a href="file:///D:/Module_4/BootstrapTesting/InABox/login.html">Log In</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <form action="/signup" method="POST">
+        <!-- Form fields here -->
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <!-- Footer content here -->
+  </footer>
+
+  <script>
+    function showWarning() {
+      var warningElement = document.createElement('div');
+      warningElement.innerHTML = '<p>This is a warning message. Please read before signing up.</p>';
+      warningElement.style.backgroundColor = 'yellow';
+      warningElement.style.color = 'black';
+      warningElement.style.padding = '10px';
+      warningElement.style.textAlign = 'center';
+      warningElement.style.marginBottom = '10px';
+
+      var signUpLink = document.querySelector('a[href="file:///D:/Module_4/BootstrapTesting/InABox/Signup.html"]');
+      signUpLink.parentNode.insertBefore(warningElement, signUpLink);
+
+      setTimeout(function () {
+        warningElement.remove();
+        window.location.href = signUpLink.href;
+      }, 3000);
+      
+      return false;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Company Website</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .company-name {
+      background-color: transparent;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .navbar {
+      background-color: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: #f2f2f2;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .navbar a:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .footer {
+      background-color: #9C8A6C;
+      color: #f2f2f2;
+      padding: 20px;
+      flex-shrink: 0;
+    }
+
+    .footer .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer .left-section {
+      text-align: left;
+    }
+
+    .footer .center-section {
+      text-align: center;
+    }
+
+    .footer .social-links {
+      display: inline-block;
+    }
+
+    .footer .social-links a {
+      color: #f2f2f2;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .footer .right-section {
+      text-align: right;
+    }
+
+    /* New styles */
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100% - 70px); /* Subtract the height of the header and footer */
+    }
+
+    h1 {
+      color: black; /* Change this to your desired color */
+    }
+
+    body {
+      background-image: url('burger.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="company-name">
+    <h1>In A Box</h1>
+  </div>
+
+  <div class="navbar">
+    <div>
+      <a href="file:///D:/Module_4/BootstrapTesting/InABox/Homepage.html">Home</a>
+      <a href="file:///D:/Module_4/BootstrapTesting/InABox/products.html">Products</a>
+      <a href="file:///D:/Module_4/BootstrapTesting/InABox/menu.html">Menu</a>
+      <a href="#">Packages</a>
+    </div>
+    <div>
+      <a href="file:///D:/Module_4/BootstrapTesting/InABox/Signup.html">Sign Up</a>
+      <a href="file:///D:/Module_4/BootstrapTesting/InABox/login.html">Log In</a>
+    </div>
+  </div>
+
+  <img src="burger.jpg" class="img-thumbnail" alt="Cinque Terre" width="100px" >
+
+  <div class="container">
+    <!-- Your content goes here -->
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="left-section">
+        <p>Cook along with us</p>
+      </div>
+      <div class="center-section">
+        <div class="social-links">
+          <a href="#"><img src="facebook-logo.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter-logo.png" alt="Twitter"></a>
+          <a href="#"><img src="linkedin-logo.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+      <div class="right-section">
+        <a href="#">About Us</a> | <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
